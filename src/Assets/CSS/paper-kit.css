@@ -3406,10 +3406,12 @@ License - nucleoapp.com/license/
 .img-style {
   margin-top: 100px;
   margin-bottom: 100px;
+  margin-right: 200px;
   max-width: 350px;
   float: left;
 }
 .aboutMeHeader {
+  font-family: 'Ubuntu', sans-serif;
   padding-right: 150px;
   float:right;
   height: 5px;
