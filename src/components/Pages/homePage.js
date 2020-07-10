@@ -59,7 +59,7 @@ function HomePage() {
                     {/*<Popover placement="bottom" isOpen={popoverOpen} target="Popover1" toggle={toggle}>*/}
                     {/*    <PopoverHeader>Contact Info.</PopoverHeader>*/}
                     {/*    <PopoverBody><ul><li>816-352-3017</li></ul></PopoverBody>*/}
-                    
+
                     {/*</Popover>*/}
                 </div>
 
