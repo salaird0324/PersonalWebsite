@@ -1,20 +1,4 @@
-/*!
 
- =========================================================
- * Paper Kit React - v1.0.0 based on Paper Kit - v2.2.0
- =========================================================
-
- * Product Page: https://www.creative-tim.com/product/paper-kit-2
- * Copyright 2019 Creative Tim (http://www.creative-tim.com)
-
- * Designed by www.invisionapp.com Coded by www.creative-tim.com
-
- =========================================================
-
- * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
- */
-/*      light colors - used for select dropdown         */
 /* ========================================================================
  * bootstrap-switch - v3.3.2
  * http://www.bootstrap-switch.org
@@ -22,6 +6,10 @@
  * Copyright 2012-2013 Mattia Larentis
  * http://www.apache.org/licenses/LICENSE-2.0
  */
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+.resumeDownload {
+  padding-left: 33%;
+}
 .bootstrap-switch {
   display: inline-block;
   direction: ltr;
@@ -3411,17 +3399,28 @@ License - nucleoapp.com/license/
   float: left;
 }
 .aboutMeHeader {
-  font-family: 'Ubuntu', sans-serif;
+  padding-top: 3%;
+  font-family: 'Anton', sans-serif;
   padding-right: 150px;
   float:right;
   height: 5px;
 }
 .aboutMeParagraph {
-  margin-top: 250px;
+  font-size: medium;
+  margin-top: 130px;
   width: 540px;
   height: 120px;
   padding-left: 100px;
   float: right;
+}
+#secondParagraph {
+  margin-top: 8%;
+}
+.paragraph {
+  font-family: 'Lato', sans-serif;
+  font-size: large;
+  line-height: 35px;
+
 }
 
 .img-details img {
@@ -3437,7 +3436,9 @@ License - nucleoapp.com/license/
   margin-bottom: 10px;
   padding: 4px;
   border-radius: 50% !important;
-  max-width: 100%; }
+  max-width: 100%;
+  border: 3px solid #555;
+  }
 
 .img-thumbnail {
   border: 0 none;

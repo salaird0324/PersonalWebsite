@@ -1,24 +1,6 @@
 
-
-/*!
-
-=========================================================
-* Paper Kit React - v1.0.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/paper-kit-react
-
-* Copyright 2019 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/paper-kit-react/blob/master/LICENSE.md)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import React from "react";
+import { useState } from 'react';
 // nodejs library that concatenates strings
 import classnames from "classnames";
 import Products from "../Pages/products";
@@ -31,7 +13,10 @@ import {
     NavItem,
     NavLink,
     Nav,
-    Container
+    Container,
+    Popover,
+    PopoverHeader,
+    PopoverBody
 } from "reactstrap";
 
 import {
@@ -50,6 +35,16 @@ function Header() {
         setNavbarCollapse(!navbarCollapse);
         document.documentElement.classList.toggle("nav-open");
     };
+
+    const popover = (
+        <Popover id="popover-basic">
+            <Popover.Title as="h3">Popover right</Popover.Title>
+            <Popover.Content>
+                And here's some <strong>amazing</strong> content. It's very engaging.
+                right?
+            </Popover.Content>
+        </Popover>
+    );
 
     React.useEffect(() => {
         const updateNavbarColor = () => {
@@ -78,7 +73,7 @@ function Header() {
                 <div className="navbar-translate">
                     <NavbarBrand
                         data-placement="bottom"
-                        href="/index"
+                        href="/"
                         target="_blank"
                         title="Spencer Laird resume"
                     >
